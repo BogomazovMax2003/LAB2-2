@@ -3,11 +3,14 @@
 #include"Family.h"
 #include"FamilyFromregion.h"
 int main() {
-	Family family(50000,4,"Bogomazov");
-	Region Moscow("Moscow", 12000, 1000);
-	FamilyFromRegion c;
-	float z = 0;
-	z = c.cash();
-	family.setCash(z);
-	std::cout << c.end;
+	Family family(50000, 4, "Bogomazov");
+	Region Moscow("Moscow", 12000, 13000);
+	FamilyFromRegion Fam("Moscow", 12000, 13000, 50000, 4, "Bogomazov");
+	family.srednieDohod();
+	family.printParametrv1();
+	Moscow.printParametrv2();
+	int a = 0;
+	a=Fam.srednieDohod();
+	std::cout << a << std::endl;
+	Fam.printParametrv1();
 }

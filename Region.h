@@ -2,13 +2,12 @@
 #include<string>
 class Region
 {
-public:
-	std::string name;
+protected:
 	float quantityOneFamily;
 	float porZnack;
+	std::string name;
+public:
 	Region(std::string region,float a,float b);
-	friend void printParametrv2(Region& region);
-	float GetSrPoReg() { return porZnack; };
-	float GetQR() { return quantityOneFamily; };
+	void printParametrv2();
 };
 
